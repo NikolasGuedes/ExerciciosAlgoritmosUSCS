@@ -1,0 +1,346 @@
+html {
+
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 90px);
+
+    overflow-x: hidden;
+
+}
+
+body {
+
+    background: linear-gradient(#08AEEA, #2AF598) fixed;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+
+
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #FAF9F6;
+    padding: 2em 1em;
+
+    border-bottom: 0.5em solid #2AF598;
+
+    z-index: 4;
+
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+    margin: 0;
+    padding: 0;
+    width: auto;
+    all: unset;
+}
+
+.nome_site {
+
+    color: #08AEEA;
+    font-size: 1em;
+    font-weight: 800;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu_site {
+    margin-right: 3em;
+}
+
+.menu_site:hover {
+    background: #2AF598;
+    cursor: pointer;
+}
+
+.menu_opcoes {
+
+    z-index: 5;
+
+    background: #FAF9F6;
+
+    position: fixed;
+
+    margin-top: 2em;
+    margin-left: 80%;
+
+
+}
+
+nav {
+
+    padding: 0 4em;
+
+}
+
+li {
+    margin: 1em 0;
+    padding: 1em;
+}
+
+li:hover {
+    cursor: pointer;
+    background: #08AEEA;
+}
+
+
+main {
+    position: absolute;
+    margin-top: 8em;
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+    align-content: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.botao_voltar {
+
+    background: #2AF598;
+    padding: 1em;
+    width: 10%;
+    text-align: center;
+    margin-top: 1.2em;
+
+
+    justify-content: center;
+    align-self: center;
+
+    border-radius: 1em;
+
+    color: #FAF9F6;
+
+    align-self: flex-start;
+    margin-left: 2em;
+}
+
+.botao_voltar:hover {
+
+    transition: 0.2s;
+
+    background: #00b853;
+    cursor: pointer;
+}
+
+.secao_atividade {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+    border-radius: 1em;
+    background: #FAF9F6;
+
+
+
+    width: 50%;
+
+    padding: 2em;
+    margin: 2em 2em;
+    text-align: justify;
+}
+
+h1 {
+
+    font-size: 1em;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    color: #08AEEA;
+
+    margin-bottom: 1em;
+}
+
+h2 {
+
+    font-size: 1em;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    color: #08AEEA;
+
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
+
+.descricao_exercicio {
+
+    font-weight: 500;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.campo_valor {
+
+    background: #E5E4E2;
+    border: 1px solid #2AF598;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+
+    padding: 1em;
+
+    margin: 0.5em 0;
+
+}
+
+.campo_valor:hover {
+
+    background: #C0C0C0;
+
+}
+
+
+.botao_enviar {
+
+    background: #08AEEA;
+    padding: 1em;
+    width: 40%;
+    text-align: center;
+    margin: 1em;
+
+    justify-content: center;
+    align-self: center;
+
+    border-radius: 1em;
+
+    color: #FAF9F6;
+}
+
+
+.botao_enviar:hover {
+
+    transition: 0.2s;
+
+    background: #0044ff;
+    cursor: pointer;
+}
+
+.botao_apagar {
+
+    background: #2AF598;
+    padding: 1em;
+    width: 40%;
+    text-align: center;
+    margin-top: 1.2em;
+
+
+    justify-content: center;
+    align-self: center;
+
+    border-radius: 1em;
+
+    color: #FAF9F6;
+}
+
+.botao_apagar:hover {
+
+    transition: 0.2s;
+
+    background: #00b853;
+    cursor: pointer;
+}
+
+.resposta_exercicio {
+
+    background: #E5E4E2;
+    border: 1px solid #2AF598;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+
+
+    padding: 1.5em;
+    line-height: 2em;
+
+}
+
+
+
+.valor_evidencia {
+
+    font-size: 1em;
+    font-size: 25px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    color: #08AEEA;
+
+
+
+    display: inline-block;
+}
+
+.valor_evidencia_resposta {
+
+    font-size: 1em;
+    font-size: 25px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    color: #00d676;
+
+
+
+
+    display: inline-block;
+}
+
+.esconde_item {
+    display: none;
+}
+
+
+
+@media(max-width: 560px) {
+
+    .secao_atividade {
+
+        width: 70%;
+    }
+
+
+
+}
+
+
+@media(max-width: 1800px) {
+
+
+    .menu_opcoes {
+
+
+        margin-top: 6em;
+        margin-left: 0;
+
+
+    }
+
+    nav {
+
+        padding: 0 2em;
+
+    }
+
+    li {
+        margin: 0;
+    }
+
+}

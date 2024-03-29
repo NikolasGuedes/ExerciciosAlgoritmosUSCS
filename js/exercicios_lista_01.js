@@ -1,3 +1,6 @@
+const btnMenuListaExercicios = document.querySelector('#btnMenuLista')
+const MenuListaExercicios = document.querySelector('#MenuLista')
+
 const input01_Exercicio01 = document.querySelector('#input_01_exercicio_01')
 const input02_Exercicio01 = document.querySelector('#input_02_exercicio_01')
 const btnResultado01 = document.querySelector('#btnResultado_01')
@@ -73,6 +76,16 @@ const btnLimpar12 = document.querySelector('#btnLimpar_12')
 function nome() {
     console.log("Site feito por Nikolas Guedes da Silva")
 }
+
+function chamaMenu() {
+
+    MenuListaExercicios.classList.toggle('esconde_item')
+
+}
+
+btnMenuListaExercicios.addEventListener('click', ()=> {
+    chamaMenu()
+})
 
 
 

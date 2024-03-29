@@ -1,3 +1,12 @@
+html {
+
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 90px);
+
+    overflow-x: hidden;
+
+}
+
 body {
 
     background: linear-gradient(#4158D0, #C850C0) fixed;
@@ -21,16 +30,67 @@ header {
 
 }
 
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+    margin: 0;
+    padding: 0;
+    width: auto;
+    all: unset;
+}
+
 .nome_site {
 
     color: #4158D0;
     font-size: 1em;
     font-weight: 800;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .menu_site {
     margin-right: 3em;
 }
+
+.menu_site:hover {
+    background: #C850C0;
+    cursor: pointer;
+}
+
+.menu_opcoes {
+
+    z-index: 5;
+
+    background: #FAF9F6;
+
+    position: fixed;
+
+    margin-top: 2em;
+    margin-left: 80%;
+
+
+}
+
+nav {
+
+    padding: 0 4em;
+
+}
+
+li {
+    margin: 1em 0;
+    padding: 1em;
+}
+
+li:hover {
+    cursor: pointer;
+    background: #4158D0;
+}
+
 
 main {
     position: absolute;
@@ -45,6 +105,34 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
 
+}
+
+.botao_voltar {
+
+    background: #C850C0;
+    padding: 1em;
+    width: 10%;
+    text-align: center;
+    margin-top: 1.2em;
+
+
+    justify-content: center;
+    align-self: center;
+
+    border-radius: 1em;
+
+    color: #FAF9F6;
+
+    align-self: flex-start;
+    margin-left: 2em;
+}
+
+.botao_voltar:hover {
+
+    transition: 0.2s;
+
+    background: #b600aa;
+    cursor: pointer;
 }
 
 .secao_atividade {
@@ -215,17 +303,44 @@ h2 {
     display: inline-block;
 }
 
+.esconde_item {
+    display: none;
+}
+
 
 
 @media(max-width: 560px) {
 
     .secao_atividade {
-      
-
 
         width: 70%;
+    }
 
-      
+
+
+}
+
+
+@media(max-width: 1800px) {
+
+
+    .menu_opcoes {
+
+
+        margin-top: 6em;
+        margin-left: 0;
+
+
+    }
+
+    nav {
+
+        padding: 0 2em;
+
+    }
+
+    li {
+        margin: 0;
     }
 
 }

@@ -12,342 +12,52 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./exercicios.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/exercicios.js" defer></script>
 
 </head>
 
 <body>
+
     <header>
         <p class="nome_site">Atividades de Algoritmo</p>
-        <p class="menu_site">menu</p>
     </header>
 
     <main>
 
-        <section class="secao_atividade">
+        <section class="secao_base">
 
-            <h1>Exercicio 01</h1>
+            <h1 class="titulo_base">hub de exercicios:</h1>
 
-            <p class="descricao_exercicio">O programa deverá ler dois valores inteiros informados pelo usuário e
-                apresentar na
-                console, e na página HTML, os valores entrados e a soma deles.
-            </p>
-
-            <input type="number" id="input_01_exercicio_01" class="campo_valor" placeholder="Ex: 1">
-            <input type="number" id="input_02_exercicio_01" class="campo_valor" placeholder="Ex: 2">
+            <section class="secao_lista_01">
 
 
-            <div class="botao_enviar" id="btnResultado_01"> Gerar Resultado </div>
+                <h1 class="nome_lista">Lista 01</h1>
+
+                <p class="descricao_lista">12 exercicios para treinar funções javascript.
+                </p>
+
+                <a href="./lista01.html">
+                    <div class="botao_acessar_01"> Acessar</div>
+                </a>
 
 
-            <h2>Resultado:</h2>
+            </section>
 
-            <div class="resposta_exercicio" id="campoResultado_01"> </div>
+            <section class="secao_lista_02">
 
+                <h1 class="nome_lista">Lista 02</h1>
 
-            <div class="botao_apagar" id="btnLimpar_01"> Limpar Campos </div>
+                <p class="descricao_lista">8 exercicios para treinar javascript com foco em IF e ELSE.
+                </p>
 
+                <a href="./lista02.html">
+                    <div class="botao_acessar_02"> Acessar</div>
+                </a>
 
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 02</h1>
-
-            <p class="descricao_exercicio">O programa deverá ler um numero inteiro informado pelo usuário. O programa
-                deverá
-                exibir ao usuário (console e página HTML) o valor do numero entrado e também a do
-                quadrado.
-            </p>
-
-            <input type="number" id="input_01_exercicio_02" class="campo_valor" placeholder="Ex: 1">
-
-
-            <div class="botao_enviar" id="btnResultado_02"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_02"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_02"> Limpar Campos </div>
-
+            </section>
 
         </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 03</h1>
-
-            <p class="descricao_exercicio">O usuário informa os valores numéricos inteiros dos lados de um retângulo. O
-                programa
-                deverá exibir ao usuário ( console e página HTML) os valores dos lados entrados e também a
-                área e perímetro do retângulo.
-            </p>
-
-            <input type="number" id="input_01_exercicio_03" class="campo_valor" placeholder="Ex: 1">
-            <input type="number" id="input_02_exercicio_03" class="campo_valor" placeholder="Ex: 2">
-
-
-
-            <div class="botao_enviar" id="btnResultado_03"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_03"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_03"> Limpar Campos </div>
-
-
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 04</h1>
-
-            <p class="descricao_exercicio">O usuário informa o valor numérico do salário atual de um empregado e um
-                valor numérico
-                correspondente à porcentagem de aumento que deve ser aplicada ao salário atual. O
-                programa deverá exibir ao usuário ( console e página HTML) o valor do salário atual, o valor
-                da porcentagem de aumento e o valor do salário futuro.
-            </p>
-
-            <input type="number" id="input_01_exercicio_04" class="campo_valor" placeholder="Ex: 1200">
-            <input type="number" id="input_02_exercicio_04" class="campo_valor" placeholder="Ex: 10">
-
-
-
-            <div class="botao_enviar" id="btnResultado_04"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_04"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_04"> Limpar Campos </div>
-
-
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 05</h1>
-
-            <p class="descricao_exercicio">O usuário informa o valor numérico da temperatura em Graus Fahrenheit. O
-                programa
-                deverá informar ao usuário ( console e página HTML) o valor entrado da temperatura em
-                Fahrenheit e o valor correspondente em Graus Centígrados.
-            </p>
-
-            <input type="number" id="input_01_exercicio_05" class="campo_valor" placeholder="Ex: 32">
-
-
-            <div class="botao_enviar" id="btnResultado_05"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_05"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_05"> Limpar Campos </div>
-
-
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 06</h1>
-
-            <p class="descricao_exercicio">O usuário informa o valor numérico da temperatura em Graus Centígrados. O
-                programa
-                deverá informar ao usuário (console e página HTML) o valor entrado da temperatura em
-                Centígrados e o valor correspondente em Graus Fahrenheit
-            </p>
-
-            <input type="number" id="input_01_exercicio_06" class="campo_valor" placeholder="Ex: 32">
-
-
-            <div class="botao_enviar" id="btnResultado_06"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_06"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_06"> Limpar Campos </div>
-
-
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 07</h1>
-
-            <p class="descricao_exercicio">Escrever um programa Javascript que leia o valor de um produto entrado pelo
-                usuário e
-                exiba (console e página HTML) o valor total do produto acrescido de 20%.
-            </p>
-
-            <input type="number" id="input_01_exercicio_07" class="campo_valor" placeholder="Ex: 1000">
-
-
-            <div class="botao_enviar" id="btnResultado_07"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_07"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_07"> Limpar Campos </div>
-
-
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 08</h1>
-
-            <p class="descricao_exercicio">Escrever um programa Javascript que leia do usuário o tempo total de uma
-                atividade
-                expressa em horas. O programa deverá exibir (console e página HTML) o tempo
-                correspondente à atividade expresso em minutos.
-            </p>
-
-            <input type="number" id="input_01_exercicio_08" class="campo_valor" placeholder="Ex: 2">
-
-
-            <div class="botao_enviar" id="btnResultado_08"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_08"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_08"> Limpar Campos </div>
-
-
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 09</h1>
-
-            <p class="descricao_exercicio">Escrever um programa Javascript que leia um número do usuário. O programa
-                deverá exibir
-                (console e página HTML) o valor anterior do número e o valor posterior. Por exemplo, se o
-                usuário digitar 10, o programa deverá exibir 9 e 11.
-
-            </p>
-
-            <input type="number" id="input_01_exercicio_09" class="campo_valor" placeholder="Ex: 2">
-
-
-            <div class="botao_enviar" id="btnResultado_09"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_09"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_09"> Limpar Campos </div>
-
-
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 10</h1>
-
-            <p class="descricao_exercicio">Escrever um programa Javascript que leia do usuário o valor correspondente a
-                um produto
-                comprado por um cliente de uma loja. Considerando que o usuário irá pagar o produto em
-                quatro parcelas sem juros, o programa deverá exibir o valor de cada parcela, em console e
-                página HTML.
-
-            </p>
-
-            <input type="number" id="input_01_exercicio_10" class="campo_valor" placeholder="Ex: 2">
-
-
-            <div class="botao_enviar" id="btnResultado_10"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_10"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_10"> Limpar Campos </div>
-
-
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 11</h1>
-
-            <p class="descricao_exercicio">Escrever um programa Javascript que leia o preço normal de um produto de uma
-                loja. O
-                programa deverá exibir (em console e página HTML) o preço do produto com desconto de
-                10%.
-
-            </p>
-
-            <input type="number" id="input_01_exercicio_11" class="campo_valor" placeholder="Ex: 120">
-
-
-            <div class="botao_enviar" id="btnResultado_11"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_11"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_11"> Limpar Campos </div>
-
-
-        </section>
-
-        <section class="secao_atividade">
-
-            <h1>Exercicio 12</h1>
-
-            <p class="descricao_exercicio">Escrever um programa Javascript que leia as três notas de um aluno e exiba,
-                em console e
-                em página HTML, a média aritmética das notas entradas.
-
-            </p>
-
-            <input type="number" id="input_01_exercicio_12" class="campo_valor" placeholder="Ex: 6">
-            <input type="number" id="input_02_exercicio_12" class="campo_valor" placeholder="Ex: 5">
-            <input type="number" id="input_03_exercicio_12" class="campo_valor" placeholder="Ex: 7">
-
-
-            <div class="botao_enviar" id="btnResultado_12"> Gerar Resultado </div>
-
-
-            <h2>Resultado:</h2>
-
-            <div class="resposta_exercicio" id="campoResultado_12"> </div>
-
-
-            <div class="botao_apagar" id="btnLimpar_12"> Limpar Campos </div>
-
-
-        </section>
-
-
 
     </main>
 </body>
