@@ -74,6 +74,9 @@ main {
     display: flex;
     flex-wrap: nowrap;
 
+    justify-content: center;
+    align-items: center;
+
     border-radius: 1em;
     background: linear-gradient(#4158D0, #C850C0);
     /* border: 0.3em solid #C850C0; */
@@ -93,6 +96,9 @@ main {
 
     display: flex;
     flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
 
     border-radius: 1em;
     background: linear-gradient(#08AEEA, #2AF598);
@@ -223,12 +229,17 @@ h1 {
 
 @media(max-width: 560px) {
 
-    .secao_lista {
+    .secao_base {
 
         flex-wrap: wrap;
 
         width: 60%;
 
+    }
+
+    .titulo_base {
+
+       margin-left: 0;
     }
 
 
@@ -237,6 +248,57 @@ h1 {
         width: 100%;
 
 
+    }
+
+
+
+    .secao_lista_01 {
+
+       
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 60%;
+        margin: 1em 0;
+
+        text-align: center;
+    
+    
+    }
+    
+    .secao_lista_02 {
+    
+      
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 60%;
+        margin: 1em 0;
+
+        text-align: center;
+    
+    
+    }
+
+
+
+    .nome_lista {
+      
+        margin-bottom: 1em;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        padding: 0;
+
+    
+    
+    }
+    
+    
+    .descricao_lista {
+    
+       
+        width: 100%;
+        text-align: justify;
+    
     }
 
 }
